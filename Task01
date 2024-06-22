@@ -1,0 +1,98 @@
+
+Name: Dhiraj Shelke
+Company: CODTECH IT SOLUTIONS
+ID:  CT4PP2785
+Domain: Python
+Duration: JUNE 20,2024 to JULY 20th, 2024
+Mentor: SRAVANI GOUNI
+
+Overview of the Project
+
+# Function to evaluate the expression
+def evaluate_expression():
+    try:
+        result = eval(entry.get())
+        entry.delete(0, tk.END)
+        entry.insert(tk.END, str(result))
+    except Exception as e:
+        messagebox.showerror("Error", "Invalid Expression")
+
+# Function to append a character to the entry field
+def append_character(char):
+    entry.insert(tk.END, char)
+
+# Function to clear the entry field
+def clear_entry():
+    entry.delete(0, tk.END)
+
+# Create the main window
+root = tk.Tk()
+root.title("Basic Calculator")
+
+# Create the entry field
+entry = tk.Entry(root, width=25, font=("Arial", 18))
+entry.grid(row=0, column=0, columnspan=4)
+
+# Define the buttons
+buttons = [
+    ('7', 1, 0), ('8',…
+[1:40 pm, 22/06/2024] DHIRAJ SHELKE: Sure! Here's an overview for the basic calculator project using Python and Tkinter:
+
+### Project Overview: Basic Calculator with Python and Tkinter
+
+#### Objective:
+The goal of this project is to develop a simple calculator application with a graphical user interface (GUI) using Python's tkinter library. The calculator will allow users to perform basic arithmetic operations such as addition, subtraction, multiplication, and division.
+
+#### Features:
+1. *Graphical User Interface (GUI):* 
+   - An entry field to display the expression being entered and the result.
+   - Buttons for digits (0-9) and decimal point.
+   - Buttons for basic arithmetic operations (+, -, *, /).
+   - An equal button to evaluate the expression.
+   - A clear button to reset the entry field.
+
+2. *Functionality:*
+   - Users can input a sequence of numbers and operations, which will be displayed in the entry field.
+   - Upon pressing the equal button, the entered expression will be evaluated and the result will be displayed.
+   - The clear button will clear the current input in the entry field.
+
+#### Components:
+1. *Entry Field:*
+   - A single line text field (tk.Entry) where users can see the current input and the result of calculations.
+
+2. *Buttons:*
+   - Digit buttons (0-9) and a decimal point button (.)
+   - Operation buttons for addition (+), subtraction (-), multiplication (*), and division (/)
+   - Equal button (=) to evaluate the entered expression.
+   - Clear button (C) to clear the input field.
+
+#### Implementation Steps:
+1. *Setup the Main Window:*
+   - Initialize the main window using tk.Tk().
+   - Set the title and size of the window.
+
+2. *Create the Entry Field:*
+   - Add an entry widget to the window for displaying the input and results.
+
+3. *Define Button Functions:*
+   - *Evaluate Expression:* A function to evaluate the mathematical expression entered by the user and display the result.
+   - *Append Character:* A function to append characters (digits, operations) to the entry field.
+   - *Clear Entry:* A function to clear the entry field.
+
+4. *Create and Position Buttons:*
+   - Create button widgets for digits, operations, equal sign, and clear.
+   - Use grid layout to position the buttons in a calculator-like arrangement.
+
+5. *Main Loop:*
+   - Run the Tkinter event loop using root.mainloop() to keep the application running.
+
+#### Code Overview:
+The provided code demonstrates the creation of the calculator with the following key sections:
+
+- *Importing Libraries:* Import the tkinter library.
+- *Function Definitions:* Define functions for evaluating expressions, appending characters, and clearing the entry field.
+- *Creating Widgets:* Create the main window, entry field, and buttons.
+- *Positioning Widgets:* Use the grid layout to position the buttons and entry field.
+- *Running the Application:* Start the Tkinter event loop to run the application.
+
+This project serves as a great introduction to GUI programming in Python and demonstrates how to create a functional application using basic tkinter widgets and event handling.
